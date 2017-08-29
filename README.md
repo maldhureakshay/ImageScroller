@@ -6,20 +6,24 @@ Easy way to implement autoscroll images
 <img src="ImageScroller/images/output.gif" width="250"/>
 
 
-## Customization
+## Usage
 
-##### Pager Behaviour
-
-The pager indicator can be updated progressive as we swipe or at once in the middle of the transition between the view controllers.
-By setting up `pagerBehaviour` property we can choose how the indicator should be updated.
+##### initial setup
 
 ```swift
-public var pagerBehaviour: PagerTabStripBehaviour
+ imageScroller.delegate = self
+        imageScroller.isAutoScrollEnabled = true
+        imageScroller.scrollTimeInterval = 2.0 //time interval
+        imageScroller.scrollView.bounces = false
+        imageScroller.setupScrollerWithImages(images: sampleImages)
 ```
+##### implement pagechanged delegate
 
 ```swift
-public enum PagerTabStripBehaviour {
-    case Common(skipIntermediteViewControllers: Bool)
-    case Progressive(skipIntermediteViewControllers: Bool, elasticIndicatorLimit: Bool)
+extension ViewController : ImageScrollerDelegate{
+    
+    func pageChanged(index: Int) {
+        self.pageIndicatorLabel.text = String(format: "%d/%d", index+1,self.sampleImages.count)
+    }
 }
 ```
