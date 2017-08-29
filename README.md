@@ -6,8 +6,6 @@ Easy way to implement autoscroll images
 <img src="ImageScroller/images/output.gif" width="250"/>
 
 
-## Dependancy 
-SDWebImage
 
 ## Usage
 
@@ -37,6 +35,9 @@ Load your image array, with array of urls of type string and set isDynamicLoad t
 ```swift
     imageScroller.isDynamicLoad = true
 ```
+
+### Dependancy 
+SDWebImage
 
 ## Thats it!
 # Happy Coding
