@@ -11,6 +11,7 @@ Easy way to implement autoscroll images
 ##### initial setup
 
 ```swift
+ var sampleImages = ["1.jpg","2.jpg","3.jpg","4.jpg"]
  imageScroller.delegate = self
         imageScroller.isAutoScrollEnabled = true
         imageScroller.scrollTimeInterval = 2.0 //time interval
@@ -28,6 +29,11 @@ extension ViewController : ImageScrollerDelegate{
 }
 ```
 
+##### handling dynamic images
+Load your image array, with array of urls of type string and set isDynamicLoad to true 
+```swift
+    imageScroller.isDynamicLoad = true
+```
 
 ## Thats it!
 # Happy Coding
