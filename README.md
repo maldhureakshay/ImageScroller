@@ -36,7 +36,7 @@ Load your image array, with array of urls of type string and set isDynamicLoad t
     imageScroller.isDynamicLoad = true
 ```
 
-### Dependancy 
+##### Dependancy 
 SDWebImage
 
 ## Thats it!
