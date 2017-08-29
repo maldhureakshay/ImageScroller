@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         //scroller config
         imageScroller.delegate = self
         imageScroller.isAutoScrollEnabled = true
-        imageScroller.scrollTimeInterval = 4.0 //time interval
+        imageScroller.scrollTimeInterval = 2.0 //time interval
         imageScroller.scrollView.bounces = false
         imageScroller.setupScrollerWithImages(images: sampleImages)
         self.pageChanged(index: 0)
