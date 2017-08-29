@@ -6,6 +6,9 @@ Easy way to implement autoscroll images
 <img src="ImageScroller/images/output.gif" width="250"/>
 
 
+## Dependancy 
+SDWebImage
+
 ## Usage
 
 ##### initial setup
