@@ -5,4 +5,4 @@ Easy way to implement autoscroll images
 
 Long time ago twitter app made use of this type of pager in the app main screen.
 
-<img src="ImageScroller/ImageScroller/images/output.gif" width="250"/>
+<img src="ImageScroller/images/output.gif" width="250"/>
